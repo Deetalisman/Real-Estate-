@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 64.2%;
+}
+:root{
+    --tom:tomato;
+    --grey:gray;
+    --black:black;
+    --back:rgb(249, 236, 234);
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color:whitesmoke;
+    position: relative;
+}
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    padding: 2rem 10%;
+    justify-content: space-between;
+    box-shadow: 0px 15px 10px -15px;
+    background-color: white;
+}
+.head1 h1{
+    font-size: 3rem;
+}
+.head1 h1 span{
+    font-size: 3rem;
+    color: var(--tom);
+}
+header ul{
+    margin-top: 1rem;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 1.5rem;
+
+}
+header ul li a{
+    font-size: 1.8rem;
+    color: var(--grey);
+    cursor: pointer;
+    text-decoration: none;
+}
+header ul li a:hover{
+    color: var(--tom);
+}
+.div3{
+   font-size: 2.1rem;
+   color: var(--tom);
+   display: flex;
+   align-items: center;
+}
+.love{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color:var(--back);
+    text-align: center;
+    padding-top: 0.9rem;
+    margin-right: 1rem;
+    border-radius: 0.7rem;
+}
+.user:hover{
+    background-color: var(--tom);
+}
+.love:hover{
+    background-color: var(--tom);
+}
+.user:hover.user i{
+    color: white;
+}
+.love:hover.love i{
+    color: white;
+}
+.user{
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: var(--back);
+    text-align: center;
+    padding-top: 0.9rem;
+    margin-right: 1rem;
+    border-radius: 0.7rem;
+}
+section{
+    background-image: url(images/home-bg.jpg);
+    background-size: 100% 90vh;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+nav{
+    width: 60rem;
+    background-color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.part1{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.part1 button{
+    width: 49%;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color:var(--back);
+    border: 0;
+    color: var(--tom);
+}
+nav h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.part2{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.part2 input{
+    width: 49%;
+    height: 3rem;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    outline: none;
+}
+.price,
+.ready,
+.bhk,
+.bed{
+    display: flex;
+    margin-top: 1.6rem;
+    justify-content: space-between;
+}
+select{
+    width: 28rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    outline: none;
+}
+option{
+    font-size: 1.5rem;
+}
+nav button{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    background-color:var(--back);
+    border: 0;
+    color: var(--tom);
+}
+nav button:hover{
+    background-color: var(--tom);
+    color: white;
+}
+.service{
+    width: 80%;
+    margin: 2rem 15rem 0;
+}
+.head{
+    font-size: 3rem;
+    text-align: center;
+}
+.head span{
+    font-size: 3rem;
+    color: var(--tom);
+}
+.serv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.ser{
+    width: 32%;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 9px rgba(0, 0, 0, 0.3);
+    color: var(--grey);
+    padding: 2rem 2rem;
+}
+.buy{
+    font-size: 2rem;
+}
+.bpara{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
+.bbut{
+    width: 16rem;
+    height: 3.5rem;
+    font-size: 1.4rem;
+    background-color:  var(--back);
+    margin-top: 1rem;
+    border: 0;
+    color:  var(--tom);
+}
+.prop{
+    margin-top: 4rem;
+    width: 80%;
+     margin: 5rem 15rem 0;
+}
+.feats{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.feat{
+    width: 32%;
+    margin-top: 1rem;
+}
+.feat1{
+    background-image: url(images/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    height: 24rem;
+    cursor: pointer;
+}
+.feat1:hover{
+    transform:scale(1.05);
+}
+.sec-feat{
+    background-image: url(images/img-2.jpg);
+}
+.third-feat{
+    background-image: url(images/img-3.jpg);
+}
+.four-feat{
+    background-image: url(images/img-4.jpg);
+}
+.five-feat{
+    background-image: url(images/img-5.jpg);
+}
+.six-feat{
+    background-image: url(images/img-6.jpg);
+}
+.feat11{
+    display: flex;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    margin-left: 1rem;
+}
+.feat11 p{
+    margin-right: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    border-radius: 0.6rem;
+}
+.feat12{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 14rem;
+    margin-right: 1rem;
+}
+.feat12 p{
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 1rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 0.6rem;
+
+}
+.feat1 p{
+    font-size: 1.4rem;
+    color: rgb(249, 243, 243);
+}
+.feat2{
+    padding: 1.4rem 1.5rem;
+    background-color: white;
+}
+.feat21{
+    display: flex;
+    justify-content: space-between;
+}
+.feat21l{
+    display: flex;
+}
+.user1{
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--back);
+    text-align: center;
+    padding-top: 0.9rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.user1:hover{
+    background-color: var(--tom);
+}
+.user1:hover.user1 i{
+    color: white;
+}
+.user1 i{
+    font-size: 1.5rem;
+    margin-top: 1.2rem;
+}
+.mo{
+    font-size: 2rem;
+    color: var(--tom);
+    margin-top: 0.7rem;
+}
+.sqft i{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+.app{
+    font-size: 2.54rem;
+    margin-top: 1rem;
+}
+.appp{
+    font-size: 1.6rem;
+    color: var(--grey);
+    margin-top: 0.7rem;
+}
+.sqft{
+    width: 33%;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 0.6rem;
+    display: flex;
+    color: var(--grey);
+
+}
+.sqft p{
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+.sbb{
+    display: flex;
+    margin-top: 2rem;
+}
+.appb{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.appb button{
+    width: 48%;
+    height: 3rem;
+    font-size: 1.2rem;
+    background-color:var(--back);
+    border: 0;
+    color: var(--tom);
+}
+.appb button:hover{
+    background-color: var(--tom);
+    color: white;
+}
+.prof{
+    margin-top: 3rem;
+    width: 80%;
+    margin: 5rem 10%;
+}
+.agents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.agent{
+    background-color: white;
+    width: 22%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+}
+.agent1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+.agent1 i{
+    font-size: 2rem;
+    color: var(--grey);
+    cursor: pointer;
+}
+.agent1 i:hover{
+    color: var(--tom);
+}
+.agent2 img{
+    border-radius: 50%;
+    width: 9rem;
+    border: 5px solid rgb(221, 217, 217);
+}
+.agent2 h2{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+.agent2 p{
+    font-size: 1.4rem;
+    color: var(--tom);
+    margin-top: 0.6rem;
+}
+.agent3{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.agent3 p{
+    width: 3.5rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+    padding-top: 0.8rem;
+    border-radius: 0.5rem;
+    color: grey;
+    cursor: pointer;
+}
+.agent3 p:hover{
+    background-color: var(--tom);
+    color: white;
+}
+.conts{
+    width: 80%;
+    margin: 5rem 15rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cont{
+    width: 32%;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+.cont img{
+    width: 7rem;
+}
+.cont h2{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.cont p{
+    font-size: 1.5rem;
+}
+form{
+    margin-top: 3rem;
+    width: 60%;
+    margin: 5rem 20% 0;
+    background-color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 0.4rem;
+}
+input{
+    height: 3rem;
+    margin-top: 0.7rem;
+    border: 0;
+    outline: 0;
+    font-size: 1.2rem;
+    background-color: whitesmoke;
+    padding-left: 1rem;
+    border-radius: 0.2rem;
+}
+.in2{
+    margin-left: 1%;
+}
+.in1{
+    width:49%;
+}
+.in3{
+    width: 100%;
+    height: 15rem;
+}
+#submit{
+    padding: 1rem 2rem;
+    color: var(--tom);
+    background-color: var(--back);
+}
+#submit:hover{
+    color: white;
+    background-color: var(--tom);
+}
+.feet{
+    width: 80%;
+    margin: 4rem 15rem 0;
+    background-color: white;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 0.4rem;
+}
+.foots{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-bottom: 3rem;
+}
+.foot h1{
+    font-size: 2rem;
+    color: rgb(75, 75, 75);
+    margin-bottom: 1rem;
+}
+.foot p{
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+.foot p:hover{
+    color: var(--tom);
+}
+.last{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+.last span{
+    font-size: 1.5rem;
+   color: var(--tom);
+   margin-right: 0.8rem;
+}
+@media screen and (max-width:1300px){
+    .service,
+    .prop,
+    .prof,
+    .conts,
+    .feet{
+        width: 90%;
+        margin: 3rem 5%;
+    }
+}
+@media screen and (max-width:1160px) {
+    .feat{
+        width: 48%;
+    }
+}
+@media screen and (max-width:1000px) {
+    header{
+        padding: 2rem 1%;
+    }
+    form{
+        width: 80%;
+        margin: 5rem 10%;
+    }
+    header ul li{
+        margin: 0 1rem;
+    }
+    .agent{
+        width: 48%;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:780px) {
+    nav{
+        width: 90%;
+    }
+    .price,
+    .ready,
+    .bhk,
+    .bed{
+        display: block;
+        margin-top:0;
+        justify-content: space-between;
+    }
+    select{
+        width: 100%;
+        margin: 0.5rem 0;
+        height: 3.5rem;
+    }
+    .price{
+        margin-top: 1rem;
+    }
+    .part2{
+        margin-top: 0;
+    }
+    nav h1{
+        font-size: 2.3rem;
+    }
+    .serv{
+        display: block;
+    }
+    .ser{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .feat{
+        width: 100%;
+    }
+    .agent{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .conts{
+        flex-wrap: wrap;
+    }
+    .cont{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    form{
+        width: 80%;
+        margin: 5rem 0 0 10%;
+    }
+    .in1{
+        width: 100%;
+    }
+    .in2{
+        margin-left: 0;
+    }
+    .foots{
+        flex-wrap: wrap;
+    }
+    .foot{
+        margin-top: 1rem;
+    }
+    .f1{
+        text-align: left;
+    }
+    .head1 h1{
+        font-size: 2.7rem;
+    }
+    .head1 h1 span{
+        font-size: 2.7rem;
+    }
+    .head2{
+        position: absolute;
+        background-color: whitesmoke;
+        width: 100%;
+        left: 0;
+        top: 6rem;
+        text-align: center;
+        display: none;
+        transition: 2s all;
+    }
+    .head2 li{
+        display: block;
+        margin: 2rem 0;
+    }
+    .show{
+        display: block;
+    }
+    #ham{
+        cursor: pointer;
+    }
+}
